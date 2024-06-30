@@ -45,7 +45,9 @@ cp .env.example .env
 ./vendor/bin/sail artisan migrate --seed
 ```
 
-12. Visit the application in your browser:
+12. If you want to test the password reset, don't forget to set up a test mailbox(mailtrap.io or similar)
+
+13. Visit the application in your browser:
 ```
 http://localhost
 ```
