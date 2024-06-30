@@ -49,7 +49,7 @@
                                 <button @click="open = !open" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-700">
                                     {{ __('Actions') }}
                                 </button>
-                                <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                                <div x-show="open" @click.away="open = false" class="absolute right-0 bottom-full mb-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                                     <a href="{{ route('users.edit', $user->id) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                         {{ __('Edit') }}
                                     </a>
@@ -73,4 +73,3 @@
     </div>
     {{ $users->appends(request()->input())->links() }}
 </x-app-layout>
-
