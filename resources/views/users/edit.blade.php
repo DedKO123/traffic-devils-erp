@@ -36,7 +36,7 @@
             </div>
             <div class="mb-4">
                 <label for="mentor" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Mentor</label>
-                <select name="mentor" id="mentor" class="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:bg-gray-800 dark:text-gray-200">
+                <select name="mentor_id" id="mentor" class="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:bg-gray-800 dark:text-gray-200">
                     <option value="">None</option>
                     @foreach($mentors as $mentor)
                         <option value="{{ $mentor->id }}" {{ $user->mentor_id == $mentor->id ? 'selected' : '' }}>{{ $mentor->name }}</option>
